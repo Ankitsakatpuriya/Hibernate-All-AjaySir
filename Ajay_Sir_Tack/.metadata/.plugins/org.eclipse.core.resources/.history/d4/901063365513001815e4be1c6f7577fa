@@ -1,0 +1,51 @@
+package Com;
+
+import java.io.Serializable;
+import java.util.Set;
+
+@SuppressWarnings("serial")
+public class User implements Serializable {
+	
+	private int user_id;
+	private String username;
+	private long usermobileno;
+	private Set<?> Product;
+	private Set<?> s5;
+	
+	
+	public Set<?> getS5() {
+		return s5;
+	}
+	public void setS5(Set<?> s5) {
+		this.s5 = s5;
+	}
+	public int getUser_id() {
+		return user_id;
+	}
+	public void setUser_id(int user_id) {
+		this.user_id = user_id;
+	}
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public long getUsermobileno() {
+		return usermobileno;
+	}
+	public void setUsermobileno(long usermobileno) {
+		this.usermobileno = usermobileno;
+	}
+	public Set<?> getProduct() {
+		return Product;
+	}
+	public void setProduct(Set<?> product) {
+		Product = product;
+	}
+	
+	
+	
+	
+			
+}

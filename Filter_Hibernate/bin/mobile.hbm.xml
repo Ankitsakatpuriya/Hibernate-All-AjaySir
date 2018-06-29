@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+  
+  
+  <hibernate-mapping>
+  <class name="Com.Mobile",table ="mobile" schema ="mobile">
+  <id name="id">
+  	<generator class ="increment"/>
+  </id>
+  <property name ="mobilename"/>
+  <filter name="id" condition="id like'%%'"></filter>
+  <filter name="mobilename" condition="mobilename >=:mobilename"></filter>
+  
+  <filter-def name="id"/>
+ <filter-def name="mobilename"/>
+
+  
+  
+    </class>
+  </hibernate-mapping>

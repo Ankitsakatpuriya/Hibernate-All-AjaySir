@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="Com.License" table="License">
+		<id name="lid" >
+			<generator class="native">
+				<param name="property">P</param>
+				</generator>
+		</id>
+		
+		<property name="license" />
+		
+		<one-to-one name="P" class="Com.Person" cascade="all" />
+
+	
+		
+	</class>
+</hibernate-mapping>

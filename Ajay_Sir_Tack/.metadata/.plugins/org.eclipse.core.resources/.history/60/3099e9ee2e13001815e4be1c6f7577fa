@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"E:\Ajay_Sir_Tack\hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class>
+<id name="user_id"/>
+ 
+<property name="username"/>
+<property name="usermobileno" />
+ 
+<set name="Product" inverse="false" cascade="all" table="Product_User">
+ 
+<key column="User_id" />
+<many-to-many class="Com.Product" column="Productid "/>
+ 
+</set>
+</class>
+</hibernate-mapping>

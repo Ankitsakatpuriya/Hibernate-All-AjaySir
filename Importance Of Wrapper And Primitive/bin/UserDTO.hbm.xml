@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"E:\Hibernate_Ajay_Sir/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name ="Com.UserDTO" table="WWW" >
+
+<id name ="id" column="ID">
+	<generator class="increment" />
+</id>
+
+<property name="mobile" column="MOBILE" />
+<property name="aadhar" column="AADHAR" />
+<property name="pincode" column="PINCODE" />
+<property name="city" column="CITY" />
+
+
+</class>
+
+
+</hibernate-mapping>

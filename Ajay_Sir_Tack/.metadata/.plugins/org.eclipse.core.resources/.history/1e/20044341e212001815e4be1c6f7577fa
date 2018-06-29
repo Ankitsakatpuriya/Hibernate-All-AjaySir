@@ -1,0 +1,11 @@
+package Com;
+
+import java.io.Serializable;
+
+public class Price implements Serializable {
+
+	
+	private int price_id;
+	private String price_productname
+	
+	}

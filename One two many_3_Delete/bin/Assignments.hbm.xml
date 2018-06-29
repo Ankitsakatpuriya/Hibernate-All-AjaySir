@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping> 
+   <class name="Com.Assignments" table="A">  
+        
+	<id name="aid" column="Aid">
+		<generator class="assigned"/>
+	</id>
+	<property name="aname" column="Aname" length="10"/>
+	
+	
+<set name="children" cascade="all" >
+	<key column="forevenid"></key>
+	<one-to-many class="Com.Questions"/>
+	 </set>  
+    </class> 
+</hibernate-mapping>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"E:\Hibernate_Ajay_Sir/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name ="Cache_Prog.UserDTO" table="Person" >
+
+<id name ="id" column="ID">
+	<generator class="increment" />
+</id>
+
+<property name="firstname" column="FIRSTNAME" />
+<property name="nickname" column="NICKNAME" />
+<property name="colour" column="COLOUR" />
+<property name="bike" column="BIKE" />
+
+
+</class>
+</hibernate-mapping>

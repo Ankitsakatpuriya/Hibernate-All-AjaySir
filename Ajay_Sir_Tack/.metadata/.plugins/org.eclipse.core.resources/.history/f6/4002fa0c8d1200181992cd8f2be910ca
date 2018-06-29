@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"E:\Ajay_Sir_Tack\hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+ 
+<class name="Com.Brands">
+<id name="brands_id"/>
+
+
+<property name="brands_name"/>
+<property name="multipleitemsid" column="multipleitemsid" insert="false"/> 
+<set name="s3" cascade="all" >
+ 
+<key column="brandsid" />
+<one-to-many class="Com.Product" />
+</set>
+
+ </class>
+</hibernate-mapping>

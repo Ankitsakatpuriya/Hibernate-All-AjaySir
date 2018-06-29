@@ -1,0 +1,9 @@
+package Com;
+
+public class BuyNow {
+	
+	private int BuyNow_id;
+	private String BuyNow_name;
+	
+		
+}

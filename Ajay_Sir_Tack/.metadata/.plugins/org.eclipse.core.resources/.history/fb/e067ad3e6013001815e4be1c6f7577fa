@@ -1,0 +1,41 @@
+package Com;
+
+import java.io.Serializable;
+
+import org.hibernate.mapping.PrimaryKey;
+
+@SuppressWarnings("serial")
+public class Delieveryoder implements Serializable {
+
+	private int d_id;
+	private String d_name;
+	private String d_type;
+	private double d_discount;
+	public int getD_id() {
+		return d_id;
+	}
+	public void setD_id(int d_id) {
+		this.d_id = d_id;
+	}
+	public String getD_name() {
+		return d_name;
+	}
+	public void setD_name(String d_name) {
+		this.d_name = d_name;
+	}
+	public String getD_type() {
+		return d_type;
+	}
+	public void setD_type(String d_type) {
+		this.d_type = d_type;
+	}
+	public double getD_discount() {
+		return d_discount;
+	}
+	public void setD_discount(double d_discount) {
+		this.d_discount = d_discount;
+	}
+	
+	
+	
+}

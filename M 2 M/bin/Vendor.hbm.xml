@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="Com.Vendor" table="vendor">  
+        
+	<id name="id" column="e">
+	</id>
+	<property name="name" column="name" length="10"/>
+	<property name="company"/>
+	
+ <set name="Customer" cascade="all" table="vendor_customers">
+	<key column="Customer_id"></key>
+	<many-to-many class="Com.Customer" column="vendor_id"/>
+	 </set>
+    </class>
+</hibernate-mapping>

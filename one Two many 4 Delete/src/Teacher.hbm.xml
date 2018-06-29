@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping> 
+   <class name="str.Teacher" table="teacher">  
+        
+<id name="TId" column="TID"/>
+<property name="TName" column="tname" length="10"/>
+
+<set name="children" cascade="all" >
+     
+      <key column="fId" />
+      <one-to-many class="str.Student" />
+
+</set>
+
+    </class> 
+</hibernate-mapping>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"E:\Hibernate_Ajay_Sir/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name ="com.aartek.dto.UserDTO" table="user" >
+
+<id name ="id" column="ID">
+	<generator class="assigned" />
+</id>
+
+<property name="lastname" column="LAST_NAME" />
+<property name="firstname" column="FIRST_NAME" />
+<property name="address" column="Address" />
+<property name="userid" column="LOGIN_ID" />
+<property name="password" />
+<query name="allpart">
+    <![CDATA[  from UserDTO    ]]>
+</query>
+
+
+</class>
+</hibernate-mapping>

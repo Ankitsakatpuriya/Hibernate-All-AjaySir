@@ -1,0 +1,12 @@
+package Com;
+
+import java.io.Serializable;
+
+import org.hibernate.mapping.PrimaryKey;
+
+@SuppressWarnings("serial")
+public class Delieveryoder implements Serializable {
+
+	private int delieveryoder_id;
+	private String delieveryperson_name;
+	

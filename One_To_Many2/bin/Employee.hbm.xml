@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping> 
+   <class name="Com.Employee" table="employees">  
+        
+	<id name="Eid" column="eid">
+	</id>
+	<property name="Ename" column="ename" length="10"/>
+	
+	
+<set name="children" cascade="all" >
+	<key column="forevenid"></key>
+	<one-to-many class="Com.Department"/>
+	 </set>  
+    </class> 
+</hibernate-mapping>

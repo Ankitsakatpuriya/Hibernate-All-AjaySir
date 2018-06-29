@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+<class name="Com.Teacher" table="teacher">
+ 
+<id name="tid"/>
+<property name="tname"/>
+<property name="mobileno"/>
+
+
+<set name ="students" cascade="all" table="teacher_students">
+ <key column="student_id"/>
+ <many-to-many class ="Com.Student" column="si_d" />
+
+</set>
+</class>
+</hibernate-mapping>

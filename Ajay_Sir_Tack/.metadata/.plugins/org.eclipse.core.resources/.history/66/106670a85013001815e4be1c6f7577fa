@@ -1,0 +1,27 @@
+package Com;
+
+public class TrackOder {
+	
+	private int track_id;
+	private String track_produtsname;
+	private String track_no;
+	public int getTrack_id() {
+		return track_id;
+	}
+	public void setTrack_id(int track_id) {
+		this.track_id = track_id;
+	}
+	public String getTrack_produtsname() {
+		return track_produtsname;
+	}
+	public void setTrack_produtsname(String track_produtsname) {
+		this.track_produtsname = track_produtsname;
+	}
+	public String getTrack_no() {
+		return track_no;
+	}
+	public void setTrack_no(String track_no) {
+		this.track_no = track_no;
+	}
+	
+}

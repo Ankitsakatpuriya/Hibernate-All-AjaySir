@@ -1,0 +1,12 @@
+package Com;
+
+import java.io.Serializable;
+
+public class User implements Serializable {
+	
+	private int user_id;
+	private String username;
+	private long usermobileno;
+	
+	
+}

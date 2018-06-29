@@ -1,0 +1,19 @@
+package Com;
+
+import java.io.Serializable;
+import java.util.Set;
+
+@SuppressWarnings("serial")
+public class Product implements Serializable{
+
+	private int product_id;
+	private String produts_name;
+	private String produts_details;
+	private int brandsid;
+	private Set s4;
+	private Set user;
+	
+	
+	
+	
+}

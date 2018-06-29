@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"E:\Ajay_Sir_Tack\hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+ <class name = "Com.Price">
+ 
+<id name="price_id">
+<generator class="foreign">
+<param name="property">pa</param>
+</generator>
+</id>
+
+
+
+<property name="productprice"/>
+ 
+<one-to-one name="pa" class="Com.Product" cascade="all" /> 
+</class>
+</hibernate-mapping>

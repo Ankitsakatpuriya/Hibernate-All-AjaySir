@@ -1,0 +1,13 @@
+package Com;
+
+import java.io.Serializable;
+import java.util.Set;
+
+public class Paymentoptions implements Serializable {
+
+	private int payment_id;
+	private String payment_type;
+	private Set s5;
+	
+	
+}

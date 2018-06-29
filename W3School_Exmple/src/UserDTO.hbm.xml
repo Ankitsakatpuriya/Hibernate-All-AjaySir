@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"E:\Hibernate_Ajay_Sir/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name ="insert.UserDTO" table="SCHOOL" >
+
+<id name ="id" column="ID">
+	<generator class="assigned" />
+</id>
+
+<property name="firstname" column="FIRST_NAME" />
+<property name="lastname" column="LAST_NAME" />
+<property name="mobile" column="MOBILE" />
+<property name="city" column="CITY" />
+<property name="Pincode" column="PINCODE" />
+<property name="tmarks" column="TMARKS" />
+<property name="omarks" column="OMARKS" />
+
+
+</class>
+</hibernate-mapping>

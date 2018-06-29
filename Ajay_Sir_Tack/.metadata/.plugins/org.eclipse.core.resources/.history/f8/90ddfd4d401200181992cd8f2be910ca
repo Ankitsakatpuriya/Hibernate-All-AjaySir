@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"E:\Ajay_Sir_Tack\hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ 
+<class name="Com.Catagerya">
+<id name="c_id"/>
+
+<property name="catageryname"/>
+<property name="forevenid" column="forevenid" insert="false"/> 
+<set name="s1" cascade="all" >
+ 
+<key column="catagery_id" />
+<one-to-many class="Com.Multipleitems" />
+</set>
+</class>
+</hibernate-mapping>

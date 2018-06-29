@@ -1,0 +1,63 @@
+package Com;
+import java.util.HashSet;
+import java.util.Set;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+public class Main {
+
+		    public static void main(String[] args) {
+				 Configuration cfg = new Configuration();
+				 cfg.configure("hibernate.cfg.xml"); 
+				 
+				 SessionFactory factory = cfg.buildSessionFactory();
+				 Session session = factory.openSession(); 
+				 Transaction tx = session.beginTransaction();
+				 
+				 Catagery c1= new Catagery();
+				 c1.setC_id(1);
+				 c1.setCat_name("Electrical");
+				 
+				 
+				 Catagery c2= new Catagery();
+				 c2.setC_id(2);
+				 c2.setCat_name("trical");
+				
+				 
+				 Topcatagery s2=new Topcatagery();
+				 s2.setT_id(102);
+				 s2.setElectronic_cat("Cooler");
+				 s2.setElectronic_name("sdfsdfd");
+				 
+				 Topcatagery s3=new Topcatagery();
+				 s3.setT_id(102);
+				 s3.setElectronic_cat("Coodfdler");
+				 s3.setElectronic_name("sfddfs");
+				 
+				
+				 
+				 Set<Topcatagery> s =new HashSet<Topcatagery>();
+				       s.add(s2);
+				       s.add(s3);
+				 
+				 c1.setTopcatagery(s);
+				 c2.setTopcatagery(s);
+				 
+				     
+				 
+				                      // session.save(c1);
+				                       session.save(c2);
+				 
+				     tx.commit();
+				 
+				     session.close();
+				     System.out.println("Many To Many Bi-Directional is Done..!!");
+				     factory.close();
+				 
+				 }
+				}
+				 
+				 
+

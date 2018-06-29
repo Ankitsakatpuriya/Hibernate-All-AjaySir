@@ -1,0 +1,21 @@
+package Com;
+
+public class BuyNow {
+	
+	private int BuyNow_id;
+	private String BuyNow_name;
+	public int getBuyNow_id() {
+		return BuyNow_id;
+	}
+	public void setBuyNow_id(int buyNow_id) {
+		BuyNow_id = buyNow_id;
+	}
+	public String getBuyNow_name() {
+		return BuyNow_name;
+	}
+	public void setBuyNow_name(String buyNow_name) {
+		BuyNow_name = buyNow_name;
+	}
+	
+		
+}

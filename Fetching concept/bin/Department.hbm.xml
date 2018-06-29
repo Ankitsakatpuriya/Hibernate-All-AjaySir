@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping> 
+   <class name="Com.Department" table="Department">  
+        
+<id name="id" column="Did"/>
+<property name="Dname" column="Dname" length="10"/>
+
+
+<property name="forevenid" column="forevenid" insert="false"/>
+
+    </class> 
+</hibernate-mapping>

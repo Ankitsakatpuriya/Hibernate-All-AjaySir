@@ -1,0 +1,24 @@
+package Com;
+
+import java.io.Serializable;
+
+public class Delivary implements Serializable {
+
+	private int delivary_id;
+	private String delivary_customername;
+	public int getDelivary_id() {
+		return delivary_id;
+	}
+	public void setDelivary_id(int delivary_id) {
+		this.delivary_id = delivary_id;
+	}
+	public String getDelivary_customername() {
+		return delivary_customername;
+	}
+	public void setDelivary_customername(String delivary_customername) {
+		this.delivary_customername = delivary_customername;
+	}
+	
+	
+	
+}

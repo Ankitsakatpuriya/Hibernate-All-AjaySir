@@ -1,0 +1,23 @@
+package Com;
+
+import java.io.Serializable;
+
+public class Price implements Serializable {
+
+	
+	private int price_id;
+	private String price_itemname;
+	public int getPrice_id() {
+		return price_id;
+	}
+	public void setPrice_id(int price_id) {
+		this.price_id = price_id;
+	}
+	public String getPrice_itemname() {
+		return price_itemname;
+	}
+	public void setPrice_itemname(String price_itemname) {
+		this.price_itemname = price_itemname;
+	}
+	 
+}

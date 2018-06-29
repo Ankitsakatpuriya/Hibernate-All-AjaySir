@@ -1,0 +1,49 @@
+package Com;
+
+import java.io.Serializable;
+import java.util.Set;
+
+public class Price implements Serializable {
+
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private int price_id;
+	private long productprice;
+	@SuppressWarnings("rawtypes")
+	private Set product;
+	
+	
+	
+	@SuppressWarnings("rawtypes")
+	public Set getProduct() {
+		return product;
+	}
+
+	@SuppressWarnings("rawtypes")
+	public void setProduct(Set product) {
+		this.product = product;
+	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+	
+	public int getPrice_id() {
+		return price_id;
+	}
+	public void setPrice_id(int price_id) {
+		this.price_id = price_id;
+	}
+	public long getProductprice() {
+		return productprice;
+	}
+	public void setProductprice(long productprice) {
+		this.productprice = productprice;
+	}
+
+	
+	
+	}

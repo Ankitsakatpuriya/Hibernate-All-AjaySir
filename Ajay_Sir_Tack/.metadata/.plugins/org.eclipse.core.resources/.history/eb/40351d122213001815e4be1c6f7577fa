@@ -1,0 +1,29 @@
+package Com;
+
+import java.io.Serializable;
+
+public class User implements Serializable {
+	
+	private int cashback_id;
+	private String cashback_nameitems;
+	private String cashback_discount;
+	public int getCashback_id() {
+		return cashback_id;
+	}
+	public void setCashback_id(int cashback_id) {
+		this.cashback_id = cashback_id;
+	}
+	public String getCashback_nameitems() {
+		return cashback_nameitems;
+	}
+	public void setCashback_nameitems(String cashback_nameitems) {
+		this.cashback_nameitems = cashback_nameitems;
+	}
+	public String getCashback_discount() {
+		return cashback_discount;
+	}
+	public void setCashback_discount(String cashback_discount) {
+		this.cashback_discount = cashback_discount;
+	}
+
+}

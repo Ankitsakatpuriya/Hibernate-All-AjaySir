@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"E:\Hibernate_Ajay_Sir/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name ="com.aartek.dto.UserDTO" table="Company" >
+
+<id name ="id" column="ID">
+	<generator class="increment" />
+</id>
+
+<property name="lastname" column="LAST_NAME" />
+<property name="firstname" column="FIRST_NAME" />
+<property name="mobile" column="MOBILE" />
+
+
+
+
+</class>
+</hibernate-mapping>

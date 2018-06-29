@@ -1,0 +1,47 @@
+package Com;
+
+import java.io.Serializable;
+
+public class Brands implements Serializable {
+
+	private int brands_id;
+	private String brands_name;
+	
+	
+	
+	
+	
+	
+	public int getBrands_id() {
+		return brands_id;
+	}
+	public void setBrands_id(int brands_id) {
+		this.brands_id = brands_id;
+	}
+	public String getBrands_name() {
+		return brands_name;
+	}
+	public void setBrands_name(String brands_name) {
+		this.brands_name = brands_name;
+	}
+	public int getB_id() {
+		return b_id;
+	}
+	public void setB_id(int b_id) {
+		this.b_id = b_id;
+	}
+	public String getB_name() {
+		return b_name;
+	}
+	public void setB_name(String b_name) {
+		this.b_name = b_name;
+	}
+	public String getB_size() {
+		return b_size;
+	}
+	public void setB_size(String b_size) {
+		this.b_size = b_size;
+	}
+	
+	
+}

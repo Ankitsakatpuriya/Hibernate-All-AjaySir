@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping> 
+   <class name="Com.Classs" table="c">  
+        
+<id name="id" column="id"/>
+<property name="classname" length="10"/>
+
+<set name="S" cascade="all">
+     
+      <key column="fore"/>
+      <one-to-many class="Com.Student"/>
+</set>
+</class>
+</hibernate-mapping>

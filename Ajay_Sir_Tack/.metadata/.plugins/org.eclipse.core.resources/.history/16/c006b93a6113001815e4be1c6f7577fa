@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"E:\Ajay_Sir_Tack\hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="Com.Delieveryoder">
+ 
+<id name="delieveryoder_id">
+<generator class="Paymentoptions">
+<param name="property">pay</param>
+</generator>
+</id>
+<property name="delieveryperson_name"/>
+
+ 
+<one-to-one name="s" class="str.Student" cascade="all" />
+ 
+</class>
+</hibernate-mapping>

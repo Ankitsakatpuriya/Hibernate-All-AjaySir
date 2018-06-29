@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="Com.Catagery"/>
+<fullyQualifiedTypeName name="org.hibernate.Query"/>
+<fullyQualifiedTypeName name="org.hibernate.mapping.List"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="Com.Topcatagery"/>
+<fullyQualifiedTypeName name="Com.Multipleitems"/>
+<fullyQualifiedTypeName name="Com.Catagerya"/>
+<fullyQualifiedTypeName name="Com.Price"/>
+<fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="Com.Product"/>
+<fullyQualifiedTypeName name="Com.Paymentoptions"/>
+</qualifiedTypeNameHistroy>

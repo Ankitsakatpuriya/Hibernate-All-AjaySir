@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+<class name="Com.Child" table="child">
+ 
+<id name="cid" column="cid"  />
+<property name="cfirstname" column="cfirstname" length="10"/>
+<property name="clastname" column="clastname"/>
+<many-to-one name="pobject" column="addcloum" class="Com.Presnt" cascade="all" />
+ 
+</class>
+</hibernate-mapping>

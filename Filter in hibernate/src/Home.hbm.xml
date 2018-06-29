@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="Com.Home" table="home"
+        schema="oh">
+                <id name="id" column="id">
+            <generator class="increment" />
+        </id>
+        <property name="name"  />
+        <property name="mobile" column="mobile" />
+        
+        <filter name="name" condition="name like '%s%'"></filter>
+        <filter name="mobile" condition="age >= :mobile"></filter>
+    </class>
+    <filter-def name="name"/>
+    <filter-def name="ageFilter">
+    <filter-param name="mobile" type="int"/>
+    </filter-def>
+</hibernate-mapping>

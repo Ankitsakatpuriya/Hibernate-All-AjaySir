@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+ 
+<class name="Com.Payment" table="PAYMENT">
+<id name="paymentid" column="pid" />
+<discriminator column="dcolumn" type="string" length="5"/>
+<property name="amount" column="amt" />
+ 
+<subclass name="Com.Creditcard" discriminator-value="CC">
+<property name="CreaditType" column="cctype" length="10" />
+</subclass>
+ 
+<subclass name="Com.Cheque" discriminator-value="CQ">
+<property name="ChequeType" column="cqtype" length="10" />
+</subclass>
+ 
+</class>
+</hibernate-mapping>

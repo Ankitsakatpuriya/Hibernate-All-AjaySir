@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"E:\Ajay_Sir_Tack\hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="Com.Paymentoptions" >
+<id name="payment_id"/>
+
+<property name="payment_type"/>
+<property name="forevenid22" insert="false"/>
+
+
+
+
+
+
+
+
+</class>
+</hibernate-mapping>
